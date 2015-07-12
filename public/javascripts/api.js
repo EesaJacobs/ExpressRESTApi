@@ -5,8 +5,8 @@ function getLocation() {
 }
 
 function putLocation() {
-    var latitude = $("input#lat").val();
-    var longitude = $("input#long").val();
+    var latitude = $("#putLocationApi input#lat").val();
+    var longitude = $("#putLocationApi input#long").val();
     $.ajax({
         type: "POST",
         url: "/api/location",
